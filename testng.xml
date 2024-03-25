@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Booking.com Automation Test Suite" parallel="methods" thread-count="1">
+    <test name="Booking Flow Tests">
+        <classes>
+            <class name="com.booking.tests.BookingFlowTest">
+                <methods>
+                    <include name="testCompleteBookingFlow"/>
+                    <include name="testVerifyDatesInDetailsPage"/>
+                    <include name="testVerifyHotelNameInReservationPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
